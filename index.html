@@ -9,44 +9,41 @@
 
   <body>
 
-    <header class="main-header  ">
+    <header class="page-header">
       <nav class="main-nav">
+        <div class="logo"><a href="#"><img src="img/logo.png"></a></div>
         <ul class="main-nav-list">
-          <li class="main-nav-item">
-            <a><img src="img/logo.png"></a>
-          </li>
-          <li class="main-nav-item">
+          <li class="selected">
             <a href="#">SUPERSPORT</a>
           </li>
-          <li class="main-nav-item">
+          <li>
             <a href="#">SUPERSPORT TOURING</a>
           </li>
-          <li class="main-nav-item">
+          <li>
             <a href="#">SPORT</a>
           </li>
-          <li class="main-nav-item">
+          <li>
           <a href="#">DUAL SPORT</a>
           </li>
         </ul>
         <ul class="sub-nav-list">
-          <li class="sub-nav-item">
+          <li>
             <a href="#">FIND A DEALER</a>
           </li>
-          <li class="sub-nav-item">
+          <li>
             <a href="#">MY YAMAHA LOGIN/SIGNUP</a>
           </li>
-          <li class="sub-nav-item">
+          <li>
             <a href="#">EVENTS & DEMOS</a>
           </li>
-          <li class="sub-nav-item">
-            <button class="search-button"><img src="img/search_icon.svg" width="152" height="150"></button>
+          <li>
+            <button class="search-button"><img src="img/search_icon.svg" width="15" height="15"></button>
           </li>
         </ul>
       </nav>
     </header>
 
     <main>
-      <h1>Yamaha page</h1>
       <section class="models">
         <h2 class="visually-hidden">Models</h2>
         <ul class="models-list">
@@ -56,7 +53,7 @@
               <p>2016 YZF-R1M</p>
             </a>
           </li>
-          <li>
+          <li class="selected">
             <a href="#">
               <img src="img/sub02.jpg" width="161" height="90" alt="2016 YZF-R1">
               <p>2016 YZF-R1</p>
@@ -84,43 +81,50 @@
       </section>
 
       <section class="model">
-        <img src="img/motor_big.jpg" width="759" height="505" alt="big motorcycle's photo">
-        <h2>YZF‑R1</h2>
+        <div class="left-part">
+          <img src="img/motor_big.jpg" width="759" height="505" alt="big motorcycle's photo">
+        </div>
+        <div class="right-part">
+          <h2>YZF‑R1</h2>
           <ul class="model-years-list">
-            <li>
-              <a>2016</a>
+            <li class="selected">
+              <button>2016</button>
             </li>
             <li>
-              <a>2015</a>
+              <button>2015</button>
+            </li>
           </ul>
-          <p>STARTING AT</p>
-          <p>$16,490</p>
-          <p>The YZF-R1® features a lightweight and compact crossplane-
+          <p class="starting-at">STARTING AT</p>
+          <p class="price">$16,490</p>
+          <p class="description">
+            The YZF-R1® features a lightweight and compact crossplane-
             crankshaft, inline-four-cylinder, 998cc high output engine.
             The first ever for a production motorcycle—the motor delivers
             extremely high horsepower and a strong pulse of linear torque
-            for outstanding performance.</p>
-          <a>FIND A DEALER</a>
-          <a>DOWNLOAD SPECS</a>
+            for outstanding performance.
+          </p>
+          <a href="#" class="find-dealer">FIND A DEALER</a>
+          <a href="#" class="download-specs">DOWNLOAD SPECS</a>
+        </div>
       </section>
 
       <section class="features">
         <h2 class="visually-hidden">Features</h2>
         <ul class="features-list">
           <li>
-            <button>KEY FEATURES</button>
+            <button class="key-feautes">KEY FEATURES</button>
           </li>
           <li>
-            <button>POWER</button>
+            <button class="power">POWER</button>
           </li>
           <li>
-            <button>SPECS</button>
+            <button class="specs">SPECS</button>
           </li>
           <li>
-            <button>SPEED</button>
+            <button class="speed">SPEED</button>
           </li>
           <li>
-            <button>LIFE</button>
+            <button class="life">LIFE</button>
           </li>
         </ul>
       </section>
@@ -128,7 +132,7 @@
       <section class="feature">
         <h2 class="visually-hidden">Feature</h2>
         <img src="img/engine.jpg" width="320" height="359" alt="engine photo">
-        <div>
+        <div class="description">
           <h3>Cutting-edge Crossplane Engine</h3>
           <p>The 998cc in-line 4-cylinder, crossplane crankshaft engine features
             titanium fracture-split connecting rods, which are an industry first for a
@@ -160,38 +164,38 @@
       <section class="extras">
         <h2 class="visually-hidden">Extras</h2>
         <ul class="extras-list">
-          <li>Deltabox® Frame</li>
-          <li>Linkage-type KYB® Shock</li>
-          <li>MotoGP® developed SCS</li>
-          <li>MotoGP® Styling</li>
+          <li><a href="#">Deltabox® Frame</a></li>
+          <li><a href="#">Linkage-type KYB® Shock</a></li>
+          <li><a href="#">MotoGP® developed SCS</a></li>
+          <li><a href="#">MotoGP® Styling</a></li>
         </ul>
         <ul class="extras-goods-list">
           <li>
-            <a>
+            <a href="#">
               <img src="img/extras_img01.jpg" width="152" height="152" alt="gloves">
-              <span>GLOVES</span>
-              <span>$24.99</span>
+              <p class="title">GLOVES</p>
+              <p class="price">$24.99</p>
             </a>
           </li>
           <li>
-            <a>
+            <a href="#">
               <img src="img/extras_img02.jpg" width="203" height="203" alt="jacket">
-              <span>JACKET</span>
-              <span>$199.99</span>
+              <span class="title">JACKET</span>
+              <span class="price">$199.99</span>
             </a>
           </li>
           <li>
-            <a>
+            <a href="#">
               <img src="img/extras_img03.jpg" width="173" height="173" alt="helmet">
-              <span>HELMET</span>
-              <span>$159.99</span>
+              <p class="title">HELMET</p>
+              <p class="price">$159.99</p>
             </a>
           </li>
         </ul>
       </section>
     </main>
 
-    <footer>
+    <footer class="page-footer">
       <div class="top-footer">
         <ul class="top-footer-list">
           <li>
@@ -258,28 +262,30 @@
         <img src="img/footer_logo.png" width="214" height="47" alt="logo">
       </div>
       <div class="bottom-footer">
-        <p>©2016 Yamaha Motor Corporation, USA. All rights reserved.</p>
-        <ul class="bottom-footer-list">
-          <li>
-            <a>Customer Service</a>
-          </li>
-          <li>
-            <a>Contact Us</a>
-          </li>
-          <li>
-            <a>Privacy Policy</a>
-          </li>
-          <li>
-            <a>Terms & Conditions</a>
-          </li>
-          <li>
-            <a>Dealer Login</a>
-          </li>
-        </ul>
+        <div class="wrapper">
+          <p class="copyright">©2016 Yamaha Motor Corporation, USA. All rights reserved.</p>
+          <ul class="bottom-footer-list">
+            <li>
+              <a>Customer Service</a>
+            </li>
+            <li>
+              <a>Contact Us</a>
+            </li>
+            <li>
+              <a>Privacy Policy</a>
+            </li>
+            <li>
+              <a>Terms & Conditions</a>
+            </li>
+            <li>
+              <a>Dealer Login</a>
+            </li>
+          </ul>
+        </div>
       </div>
     </footer>
 
-    <script src="scripts.js"></script>
+    <script src="js/scripts.js"></script>
 
   </body>
 </html>
