@@ -413,6 +413,15 @@ main {
   background-color: transparent;
 }
 
+.features-list button:hover {
+  color: darkgrey;
+}
+
+.features-list button:active,
+.features-list button:disabled {
+  color: #212327;
+}
+
 .features-list button::after {
   position: absolute;
   bottom: -28px;
@@ -424,8 +433,26 @@ main {
   content: "";
 
   border-radius: 6px;
-  /*background-color: #ee3b33;*/
+
   background-color: #c8c8c8;
+}
+
+.features-list button:hover::after {
+  background-color: #212327;
+}
+
+.features-list button:active::after,
+.features-list button:disabled::after {
+  background-color: #ee3b33;
+}
+
+.features-list button:active path,
+.features-list button:disabled path{
+  fill: #ee3b33;
+}
+
+.features-list button:hover path {
+  fill: #212327;
 }
 
 .key-feautes svg {
@@ -462,6 +489,12 @@ main {
   display: flex;
 
   margin: 0 auto;
+  margin-bottom: 120px;
+}
+
+.feature img {
+  margin-left: 314px;
+  margin-right: 95px;
 }
 
 .feature .description {
@@ -479,18 +512,51 @@ main {
 
 .gallery {
   display: flex;
+  margin-bottom: 40px;
+}
+
+.gallery div {
+  display: flex;
   flex-wrap: wrap;
 }
 
 .view360 {
   margin: 0 auto;
+  margin-bottom: 90px;
 
   text-align: center;
+}
+
+.view360 .caption {
+  position: relative;
+
+  width: 70px;
+  margin: 0 auto;
+
+  font-size: 16px;
+}
+
+.view360 .caption::before {
+  position: absolute;
+  top: 0;
+  left: -23px;
+
+  content: "";
+
+  width: 23px;
+  height: 19px;
+
+  background-image: url("../img/360view_icon.svg");
+}
+
+.extras {
+  margin-bottom: 94px;
 }
 
 .extras-list {
   max-width: 850px;
   margin: 0 auto;
+  margin-bottom: 70px;
   padding: 0;
 
   display: flex;
@@ -508,8 +574,16 @@ main {
   opacity: 0.57;
 }
 
+.extras-list a:hover {
+  opacity: 0.7;
+}
+
+.extras-list a:active {
+  opacity: 0.5;
+}
+
 .extras-goods-list {
-  width:760px;
+  width: 760px;
 
   margin: 0 auto;
   padding: 0;
@@ -525,11 +599,27 @@ main {
   text-align: center;
 }
 
+.extras-goods-list .wrapper {
+  width: 210px;
+  height: 210px;
+
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+
+  text-align: center;
+}
+
 .extras-goods-list .title {
+  margin: 0;
+
+  font-size: 16px;
   color: #212327;
 }
 
 .extras-goods-list .price {
+  margin: 0;
+
   font-size: 14px;
   color: #8d9095;
 }
@@ -539,6 +629,8 @@ main {
 }
 
 .top-footer {
+  padding-top: 45px;
+  padding-bottom: 45px;
   background-color: #212327;
 }
 
